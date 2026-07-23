@@ -1,0 +1,6 @@
+# macOS
+.DS_Store
+
+# AI
+.antigravitycli/
+.claude/
