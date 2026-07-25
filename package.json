@@ -1,0 +1,18 @@
+{
+  "name": "agent-skills",
+  "version": "1.0.0",
+  "description": "Collection of custom agent skills and tools",
+  "type": "module",
+  "main": "sync.js",
+  "scripts": {
+    "sync": "node sync.js"
+  },
+  "keywords": [
+    "agent",
+    "skills",
+    "antigravity",
+    "ai"
+  ],
+  "author": "",
+  "license": "MIT"
+}
