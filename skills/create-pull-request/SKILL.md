@@ -9,7 +9,9 @@ This skill automates inspecting current branch changes against the base branch (
 
 ## Workflow
 
-### 1. Inspect Git Branch and Diff
+### 1. Inspect GitHub CLI, Repository Context, and Git Branch Diff
+- Verify that `gh` CLI is available and authenticated: `gh auth status`.
+- Verify git repository context and remote details: `gh repo view --json nameWithOwner,defaultBranchRef`.
 - Determine current branch name using `git branch --show-current`.
 - Inspect commits on the branch relative to the base branch: `git log main..HEAD --oneline` (or `master` if `main` does not exist).
 - Inspect the full diff: `git diff main..HEAD`.
