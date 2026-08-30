@@ -1,5 +1,5 @@
 ---
-name: create-issue
+name: gh-create-issue
 description: Automates creating GitHub issues using the `gh` CLI. Triggers whenever the user requests to create an issue, file a bug report, submit a feature request, open a ticket, or log an issue in a GitHub repository. Inspects `.github/ISSUE_TEMPLATE/` (and root/meta template variants) for matching issue templates, populates template fields and YAML metadata (labels, assignees), and executes `gh issue create`.
 ---
 

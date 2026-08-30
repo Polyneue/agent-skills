@@ -1,5 +1,5 @@
 ---
-name: create-pull-request
+name: gh-create-pull-request
 description: Automates creating GitHub pull requests using the `gh` CLI. Triggers whenever the user requests to create a pull request, open a PR, submit a PR, or create a PR from current changes or branch. Handles diff analysis, test verification, PR template population, and `gh pr create` execution.
 ---
 

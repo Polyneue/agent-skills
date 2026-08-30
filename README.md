@@ -34,10 +34,10 @@ node sync.js
 
 | Skill | Purpose | Key Triggers | Primary Output | Dependencies |
 | :--- | :--- | :--- | :--- | :--- |
-| [**`create-issue`**](skills/create-issue/SKILL.md) | Automates discovering issue templates, populating template fields/labels, and creating GitHub issues via `gh`. | `"create issue"`, `"file a bug report"`, `"submit feature request"`, `"open issue on github"` | GitHub Issue via `gh` | `gh` (GitHub CLI) |
-| [**`create-pull-request`**](skills/create-pull-request/SKILL.md) | Automates git diff inspection, test verification, PR template population, and PR creation via `gh`. | `"create pull request"`, `"open a PR"`, `"submit PR"`, `"create PR"` | GitHub Pull Request via `gh` | `git`, `gh` (GitHub CLI) |
 | [**`engineering-report`**](skills/engineering-report/SKILL.md) | Generates interactive HTML status dashboards sourcing live data from Slack, Jira, and GitHub. | `"engineering report"`, `"status report"`, `"eng report"`, `"how is <team> doing"` | Interactive HTML Dashboard (`.html`) | `gh` (GitHub CLI), Slack API, Jira API |
-| [**`gh-select-issue`**](skills/select-issue/SKILL.md) | Automates fetching open repo issues via `gh` and presenting them via `ask_question` to select an issue to work on. | `"select issue"`, `"pick an issue to work on"`, `"pull open issues"`, `"work on an issue"` | Selected GitHub Issue Details & Action Plan | `gh` (GitHub CLI) |
+| [**`gh-create-issue`**](skills/gh-create-issue/SKILL.md) | Automates discovering issue templates, populating template fields/labels, and creating GitHub issues via `gh`. | `"create issue"`, `"file a bug report"`, `"submit feature request"`, `"open issue on github"` | GitHub Issue via `gh` | `gh` (GitHub CLI) |
+| [**`gh-create-pull-request`**](skills/gh-create-pull-request/SKILL.md) | Automates git diff inspection, test verification, PR template population, and PR creation via `gh`. | `"create pull request"`, `"open a PR"`, `"submit PR"`, `"create PR"` | GitHub Pull Request via `gh` | `git`, `gh` (GitHub CLI) |
+| [**`gh-select-issue`**](skills/gh-select-issue/SKILL.md) | Automates fetching open repo issues via `gh` and presenting them via `ask_question` to select an issue to work on. | `"select issue"`, `"pick an issue to work on"`, `"pull open issues"`, `"work on an issue"` | Selected GitHub Issue Details & Action Plan | `gh` (GitHub CLI) |
 
 ---
 
@@ -54,11 +54,11 @@ agent-skills/
 │       ├── bug_report.md
 │       └── feature_request.md
 ├── skills/
-│   ├── create-issue/
-│   │   └── SKILL.md
-│   ├── create-pull-request/
-│   │   └── SKILL.md
 │   ├── engineering-report/
+│   │   └── SKILL.md
+│   ├── gh-create-issue/
+│   │   └── SKILL.md
+│   ├── gh-create-pull-request/
 │   │   └── SKILL.md
 │   └── gh-select-issue/
 │       └── SKILL.md

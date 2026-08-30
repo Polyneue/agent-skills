@@ -27,7 +27,7 @@ This skill automates pulling open GitHub issues for the current repository using
   ```
 - **Empty State**: If no open issues are returned:
   - Inform the user that there are currently no open issues in the repository.
-  - Suggest creating a new issue using the `create-issue` skill or entering an issue number manually.
+  - Suggest creating a new issue using the `gh-create-issue` skill or entering an issue number manually.
 
 ### 3. Present Issues via Interactive UI (`ask_question`)
 - Parse the JSON output from `gh issue list`.
