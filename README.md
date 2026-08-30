@@ -2,7 +2,7 @@
 
 Collection of custom agent skills and automation tools.
 
-## 🔄 Syncing Skills
+## Syncing Skills
 
 Skills contained in the [`skills/`](skills/) directory can be automatically synced to `~/.agents/skills/<skill_name_directory>` using the provided Node.js sync script.
 
@@ -30,17 +30,18 @@ node sync.js
 
 ---
 
-## 📚 Skill Directory
+## Skill Directory
 
 | Skill | Purpose | Key Triggers | Primary Output | Dependencies |
 | :--- | :--- | :--- | :--- | :--- |
 | [**`create-issue`**](skills/create-issue/SKILL.md) | Automates discovering issue templates, populating template fields/labels, and creating GitHub issues via `gh`. | `"create issue"`, `"file a bug report"`, `"submit feature request"`, `"open issue on github"` | GitHub Issue via `gh` | `gh` (GitHub CLI) |
 | [**`create-pull-request`**](skills/create-pull-request/SKILL.md) | Automates git diff inspection, test verification, PR template population, and PR creation via `gh`. | `"create pull request"`, `"open a PR"`, `"submit PR"`, `"create PR"` | GitHub Pull Request via `gh` | `git`, `gh` (GitHub CLI) |
 | [**`engineering-report`**](skills/engineering-report/SKILL.md) | Generates interactive HTML status dashboards sourcing live data from Slack, Jira, and GitHub. | `"engineering report"`, `"status report"`, `"eng report"`, `"how is <team> doing"` | Interactive HTML Dashboard (`.html`) | `gh` (GitHub CLI), Slack API, Jira API |
+| [**`gh-select-issue`**](skills/select-issue/SKILL.md) | Automates fetching open repo issues via `gh` and presenting them via `ask_question` to select an issue to work on. | `"select issue"`, `"pick an issue to work on"`, `"pull open issues"`, `"work on an issue"` | Selected GitHub Issue Details & Action Plan | `gh` (GitHub CLI) |
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 
 ```text
 agent-skills/
@@ -48,12 +49,18 @@ agent-skills/
 │   └── skills/
 │       └── add-skill-to-readme/
 │           └── SKILL.md
+├── .github/
+│   └── ISSUE_TEMPLATE/
+│       ├── bug_report.md
+│       └── feature_request.md
 ├── skills/
 │   ├── create-issue/
 │   │   └── SKILL.md
 │   ├── create-pull-request/
 │   │   └── SKILL.md
-│   └── engineering-report/
+│   ├── engineering-report/
+│   │   └── SKILL.md
+│   └── gh-select-issue/
 │       └── SKILL.md
 ├── .gitignore
 ├── LICENSE
