@@ -4,7 +4,7 @@ Collection of custom agent skills and automation tools.
 
 ## Installation
 
-The preferred installation method for end users is using the npm `skills` package:
+The preferred installation method for end users is using the [npm `skills` package](https://npmjs.com/package/skills):
 
 ```bash
 # Install skills from this repository using npx
