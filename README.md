@@ -2,11 +2,20 @@
 
 Collection of custom agent skills and automation tools.
 
-## Syncing Skills
+## Installation
 
-Skills contained in the [`skills/`](skills/) directory can be automatically synced to `~/.agents/skills/<skill_name_directory>` using the provided Node.js sync script.
+The preferred installation method for end users is using the [npm `skills` package](https://npmjs.com/package/skills):
 
-### Usage
+```bash
+# Install skills from this repository using npx
+npx skills install Polyneue/agent-skills
+```
+
+### Local Development (Sync Script)
+
+For lightweight and speedy local development and testing, skills contained in the [`skills/`](skills/) directory can be automatically synced to `~/.agents/skills/<skill_name_directory>` using the provided Node.js sync script.
+
+#### Usage
 
 Run the sync script via `npm` or `node`:
 
@@ -21,7 +30,7 @@ node sync.js
 ./sync.js
 ```
 
-### CLI Options
+#### CLI Options
 
 | Flag | Description | Example |
 | :--- | :--- | :--- |
