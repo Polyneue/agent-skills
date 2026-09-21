@@ -7,7 +7,11 @@ Collection of custom agent skills and automation tools.
 The preferred installation method for end users is using the npm `skills` package:
 
 ```bash
-npm install skills
+# Install the skills package globally
+npm install -g skills
+
+# Install skills from this repository
+skills install Polyneue/agent-skills
 ```
 
 ### Local Development (Sync Script)
