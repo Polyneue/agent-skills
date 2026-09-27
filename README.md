@@ -38,6 +38,7 @@ node sync.js
 | [**`gh-create-issue`**](skills/gh-create-issue/SKILL.md) | Automates discovering issue templates, resolving ambiguous inputs via `ask_question`, populating template fields/labels, and creating GitHub issues via `gh`. | `"create issue"`, `"file a bug report"`, `"submit feature request"`, `"open issue on github"` | GitHub Issue via `gh` | `gh` (GitHub CLI), `ask_question` |
 | [**`gh-create-pull-request`**](skills/gh-create-pull-request/SKILL.md) | Automates git diff inspection, test verification, PR template population, and PR creation via `gh`. | `"create pull request"`, `"open a PR"`, `"submit PR"`, `"create PR"` | GitHub Pull Request via `gh` | `git`, `gh` (GitHub CLI) |
 | [**`gh-resolve-pull-request-feedback`**](skills/gh-resolve-pull-request-feedback/SKILL.md) | Automates fetching unresolved PR review comments via `gh`, addressing code changes, verifying tests, and replying to review threads. | `"resolve pr review comments"`, `"address PR review comments"`, `"handle code review feedback"`, `"reply to pr comments"` | Inline PR Review Replies & Summary Report | `git`, `gh` (GitHub CLI) |
+| [**`gh-review-pull-request`**](skills/gh-review-pull-request/SKILL.md) | Automates submitting pull request reviews, general feedback, and line-by-line comments via `gh` CLI and REST API. | `"review pull request"`, `"submit PR review"`, `"add inline PR comments"`, `"/gh-review-pull-request"` | Published GitHub PR Review & Summary Report | `gh` (GitHub CLI) |
 | [**`gh-select-issue`**](skills/gh-select-issue/SKILL.md) | Automates fetching open repo issues via `gh` and presenting them via `ask_question` to select an issue to work on. | `"select issue"`, `"pick an issue to work on"`, `"pull open issues"`, `"work on an issue"` | Selected GitHub Issue Details & Action Plan | `gh` (GitHub CLI) |
 
 ---
@@ -62,6 +63,8 @@ agent-skills/
 │   ├── gh-create-pull-request/
 │   │   └── SKILL.md
 │   ├── gh-resolve-pull-request-feedback/
+│   │   └── SKILL.md
+│   ├── gh-review-pull-request/
 │   │   └── SKILL.md
 │   └── gh-select-issue/
 │       └── SKILL.md
